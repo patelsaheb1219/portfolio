@@ -48,8 +48,10 @@ function submitForm(e, formName) {
             "Content-Type": "application/json"
         },
         success: function () {
-            console.log('success');
-            //...
+            $("#getCodeModal").modal('show');
+            $("#name").val("");
+            $("#email").val("");
+            $("#message").val("");
         },
         error: function () {
             console.log('error');
