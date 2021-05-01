@@ -137,7 +137,8 @@
       <div class="col-md-12">
         <h3 class="progress-list__title">Github Contributions</h3>
       </div>
-      <img src="https://ghchart.rshah.org/6d56c1/patelsaheb1219" alt="Kishan's Github chart" style="width: 100%; height: auto;" />
+      <img src="https://ghchart.rshah.org/6d56c1/patelsaheb1219" alt="Kishan's Github chart"
+        style="width: 100%; height: auto;" />
     </div>
     <div class="row mt-4">
       <div class="col-md-8 section__resume resume-list">
@@ -405,12 +406,52 @@
     </div>
     <div class="portfolio-cards">
       <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="web-sites">
-        <div class="col-md-6 col-lg-5 project-card__img" style="background-color: #EAEAEA; ">
-          <img class="" src="assets/img/storybook_project.png" alt="project-img"
-            style="object-fit: contain; position: relative; margin-left: 2.5%; width: 95%;">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/dev_camper.png" alt="project-img" style="object-fit: contain;">
         </div>
         <div class="col-md-6 col-lg-7 project-card__info">
-          <h3 class="project-card__title">A simple StoryBook Website </h3>
+          <h3 class="project-card__title">A Backend API for dev camper</h3>
+          <p class="project-card__description">
+            Backend API for the DevCamper application to manage all the bootcams, courses, reviews, users and authentication. It used Express NodeJS, MongoDB and npm package.
+            It includes the securities like NoSQL Injection, XSS protection, Rate limiting, CORS, hpp, helmet.
+          </p>
+          <p class="project-card__stack">Used stack:</p>
+          <ul class="tags">
+            <li>Node JS</li>
+            <li>Express</li>
+            <li>Mongo DB</li>
+          </ul>
+          <a href="https://developercamper.herokuapp.com/" target="_blank"
+            class="project-card__link">www.developercamper.herokuapp.com</a>
+        </div>
+      </div>
+      <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="web-sites">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/vidjot_project.png" alt="project-img" style="object-fit: contain;">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">A Webapp for Jotdown Ideas of Next Videos</h3>
+          <p class="project-card__description">
+            It is a simple web app where users can jot down ideas for his/her next Social Media videos. The app contains
+            the following functionalities. Register, login, Add, update, read and delete an idea.
+          </p>
+          <p class="project-card__stack">Used stack:</p>
+          <ul class="tags">
+            <li>Bootstrap</li>
+            <li>Node JS</li>
+            <li>Express</li>
+            <li>Mongo DB</li>
+          </ul>
+          <a href="https://vidjotidea.herokuapp.com/" target="_blank"
+            class="project-card__link">www.vidjotidea.herokuapp.com</a>
+        </div>
+      </div>
+      <div class="row project-card" data-toggle="modal" data-target="#portfolioModal" data-portfolio-tag="web-sites">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/storybook_project.png" alt="project-img" style="object-fit: contain;">
+        </div>
+        <div class="col-md-6 col-lg-7 project-card__info">
+          <h3 class="project-card__title">A simple StoryBook Website</h3>
           <p class="project-card__description">
             It is a simple story-book website, where user can log in through Google Account and share his/her thoughts
             or can create a new story.
@@ -424,14 +465,13 @@
             <li>Passport Google Oauth 2.0</li>
             <li>Mongo DB</li>
           </ul>
-          <a href="http://newstorybooks.herokuapp.com/" target="_blank"
+          <a href="https://newstorybooks.herokuapp.com/" target="_blank"
             class="project-card__link">www.newstorybooks.herokuapp.com</a>
         </div>
       </div>
       <div class="row project-card" data-portfolio-tag="landing-pages">
-        <div class="col-md-6 col-lg-5 project-card__img" style="background-color: #EAEAEA; ">
-          <img class="" src="assets/img/amity_export_image.png" alt="project-img"
-            style="object-fit: contain; position: relative; margin-left: 2.5%; width: 95%;">
+        <div class="col-md-6 col-lg-5 project-card__img">
+          <img class="" src="assets/img/amity_export_image.png" alt="project-img" style="object-fit: contain;">
         </div>
         <div class="col-md-6 col-lg-7 project-card__info">
           <h3 class="project-card__title">Landing pages for Agate Exporter</h3>
@@ -572,17 +612,17 @@
     });
 
     function getAge() {
-        var today = new Date();
-        var birthDate = new Date('10/21/1997');
-        var age = today.getFullYear() - birthDate.getFullYear();
-        var m = today.getMonth() - birthDate.getMonth();
-        if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-          age = age - 1;
-        }
-
-        return age;
+      var today = new Date();
+      var birthDate = new Date('10/21/1997');
+      var age = today.getFullYear() - birthDate.getFullYear();
+      var m = today.getMonth() - birthDate.getMonth();
+      if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
+        age = age - 1;
       }
-    document.getElementById("date").innerHTML = getAge();   
+
+      return age;
+    }
+    document.getElementById("date").innerHTML = getAge();
   </script>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-139591409-1"></script>
